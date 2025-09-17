@@ -20,19 +20,19 @@ class Node{
 }
 
 class Tree{
-    constructor(node){
-        this.root=node;
+    constructor(){
+        this.root=null;
     }
 }
 
 
 
 const newNode = new Node('root');
-newNode.addChild(1);
-newNode.addChild(2);
-newNode.addChild(3);
+const newTree = new Tree();
+const child1 = newNode('child1')
+newTree.addChild(child1);
 
-newNode.removeChild(3);
+newNode.removeChild(child1);
 
-const newTree = new Tree(newNode);
+
 console.log(newTree)
